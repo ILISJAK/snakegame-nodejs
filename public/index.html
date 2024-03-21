@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Multiplayer Snake Game</title>
     <script src="/socket.io/socket.io.js"></script>
-    <script defer src="script.js"></script>
     <style>
         #control-buttons {
             display: flex;
@@ -12,6 +12,7 @@
             gap: 10px;
             margin-top: 10px;
         }
+
         .button {
             padding: 10px;
             background-color: #333;
@@ -19,12 +20,14 @@
             border: none;
             border-radius: 5px;
         }
+
         #gameCanvas {
             display: block;
             margin: auto;
         }
     </style>
 </head>
+
 <body>
     <div id="game">
         <canvas id="gameCanvas" width="600" height="600"></canvas>
@@ -36,6 +39,8 @@
         </div>
     </div>
 
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="js/socket_events.js"></script>
 </body>
+
 </html>
